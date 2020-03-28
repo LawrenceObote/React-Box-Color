@@ -47,6 +47,7 @@ export default class App extends Component {
         >
           <p>Click Me</p>
         </div>
+        {/* Added Click Counter and changed it to the current state */}
         <h1>Click Counter: {this.state.clickCounter}</h1>
       </div>
     )
