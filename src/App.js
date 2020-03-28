@@ -39,6 +39,7 @@ export default class App extends Component {
       //parent container
       <div className="App">
         <h1>Box color change</h1>
+        {/* Creating the Box and changing it's color to the state */}
         <div className="colorBox" 
              style={{backgroundColor: 
              this.state.color}}
