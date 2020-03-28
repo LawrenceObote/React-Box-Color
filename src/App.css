@@ -3,6 +3,7 @@
   display: flex;
 }
 .colorBox{
+  display: flex;
   width: 300px;
   height: 300px;
   transition: 0.3s;
@@ -13,4 +14,10 @@ h1{
   width: 300px;
   margin: 0 auto;
   text-align: center;
+}
+.clickMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }

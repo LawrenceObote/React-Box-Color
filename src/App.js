@@ -45,7 +45,7 @@ export default class App extends Component {
              this.state.color}}
              onClick={this.changeColor}
         >
-          <p>Click Me</p>
+          <p className="clickMe">Click Me</p>
         </div>
         {/* Added Click Counter and changed it to the current state */}
         <h1>Click Counter: {this.state.clickCounter}</h1>
