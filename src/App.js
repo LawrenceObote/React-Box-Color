@@ -6,7 +6,7 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      color: 'blue',
+      color: 'yellow',
       clickCounter: 0
     }
     this.changeColor = this.changeColor.bind(this);
@@ -14,8 +14,8 @@ export default class App extends Component {
 //function to change color back and forth
   changeColor() {
     // variable to hold the state of the color
-    //if color is blue make it orange && if color is orange make it blue
-    const newColor = this.state.color === 'blue' ? 'orange' : 'blue';
+    //if color is yellow make it red && if color is red make it yellow
+    const newColor = this.state.color === 'yellow' ? 'red' : 'yellow';
     //variable to hold the state of the clickCounter
     const clicks = this.state.clickCounter
     //Adjust the states using setState method.
