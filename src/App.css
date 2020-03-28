@@ -1,6 +1,16 @@
+.app{
+  align-items: center;
+  display: flex;
+}
 .colorBox{
   width: 300px;
   height: 300px;
   transition: 0.3s;
   color: white;
+  margin: 0 auto;
+}
+h1{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
