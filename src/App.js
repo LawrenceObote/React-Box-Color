@@ -13,18 +13,22 @@ export default class App extends Component {
   }
 
   changeColor() {
-    const newColor = this.state.color == 'blue' ? 'orange' : 'blue';
-    this.setState({ color: newColor });
-    this.changeColor = this.changeColor.bind(this);
+    const newColor = this.state.color === 'blue' ? 'orange' : 'blue';
+    const clicks = this.state.clickCounter
+    this.setState({ 
+      color: newColor,
+      clickCounter: clicks + 1
+     });
+    
   }
 
-  onChange = (e) => {
-    this.setState({
-      color: 'orange',
-      clickCounter: this.state.clickCounter++
-    })
-    console.log("click counter ===>", this.state.clickCounter)
-  }
+  // onChange = (e) => {
+  //   this.setState({
+  //     color: 'orange',
+  //     clickCounter: this.state.clickCounter++
+  //   })
+  //   console.log("click counter ===>", this.state.clickCounter)
+  // }
   render() {
     return (
       //parent container
@@ -37,6 +41,7 @@ export default class App extends Component {
         >
           <p>Click Me</p>
         </div>
+        <h1>Click Counter: {this.state.clickCounter}</h1>
       </div>
     )
   }
